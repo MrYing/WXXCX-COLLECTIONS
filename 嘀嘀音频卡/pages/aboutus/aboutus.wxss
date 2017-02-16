@@ -1,0 +1,38 @@
+/* pages/aboutus/aboutus.wxss */
+.about_us_title{
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: limegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  padding-left: 10rpx;
+  padding-right: 5rpx;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+  font-size: 15px;
+  background: darkgrey;
+}
+
+.about_us_text{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.link_us_text{
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: limegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  padding-left: 10rpx;
+  padding-right: 5rpx;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+  font-size: 15px;
+  background: darkgrey;
+}

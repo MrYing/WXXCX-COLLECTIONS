@@ -1,0 +1,23 @@
+<view class="container container-fill">
+  <view class="about_us">
+    <view class="about_us_title">关于我们 (About Us)</view>
+    <view></view>
+    <view class="about_us_text">
+      <text>深圳前海卓智长天科技有限公司（以下简称“卓智长天”），是一家专注于有源智能卡及相关技术领域产品设计与制造，并为移动支付提供综合性解决方案的高新技术企业。 卓智长天致力于智能卡互联网时代的技术融合与创新，在当今互联网与各行业不断渗透融合的大背景下，卓智长天立足中国金融IC卡产业，专注有源智能卡，潜心研发符合市场需要的有源金融IC卡产品和应用系统，结合客户项目需求不断完善和提升产品生命力，倡领中国金融IC卡互联网时代应用至高点。助力我们的客户在互联网金融的大浪潮中抢占行业科技高地，迅速取得和巩固领先地位。
+        除了在有源金融IC卡领域的创新，卓智长天还积极开拓互联网金融、移动支付服务等现代服务业，为银行提供基于有源金融IC卡支付的综合性解决方案，为移动支付与互联网金融时代提供打通线上线下的创新产品，为银行卡持有者提供安全、便捷、通用的支付方式。 卓智长天秉承“上善若水、厚德载物”的经营哲学，奉行“合作创新、客户至上”的工作准则，锐意进取。公司怀着感恩的心去服务客户、善待员工、回报股东。公司以用户需求为中心，以创新为手段，通过自身的专业水平和不懈努力，探索出有源智能卡市场发展与繁荣之路。
+      </text>
+    </view>
+  </view>
+  <view class="link_us">
+    <view class="link_us_text">联系我们</view>
+    <view class="link_us_text_item">
+      <text class="link_us_text_item_address">公司地址： 广州市天河区东圃二马路67号大埔商贸园8号楼225,228室</text>
+      <view></view>
+      <text class="link_us_text_item_phone">公司电话： 020-83542206</text>
+      <view></view>
+      <text class="link_us_text_item_email">公司邮箱： info@cybbj.com</text>
+    </view>
+    <view></view>
+    <map style="width: 100%;height:300px;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" />
+  </view>
+</view>
