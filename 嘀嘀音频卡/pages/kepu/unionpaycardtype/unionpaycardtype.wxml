@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="container-body">
+    <view class="">
+      <view class="kepu-unionpaycard-title">银联卡的种类及区别介绍</view>
+      <view class="kepu-unionpaycard-text">
+        <view class="kepu-unionpaycard-text-head">银联卡的种类有哪些？\n</view>
+        <text>银联卡是卡号“62”开头、卡面有银联标识的银行卡。银联卡包括信用卡和借记卡两种。下面网为大家介绍银联卡的种类与功能。\n</text>
+        <view class="kepu-unionpaycard-text-head">1、按照类型区分\n</view>
+        <text>按照类型来区分，可分为借记卡和贷记卡：\n</text>
+        <view class="kepu-unionpaycard-text-cardname">借记卡\n</view>
+        <text>借记卡是指持卡人在发卡银行先存款，后进行交易的银行卡。借记卡便于携带，既可在银行柜台存取款，也可在ATM上进行操作，非常方便，通过借记卡储蓄还能获得利息。\n</text>
+        <view class="kepu-unionpaycard-text-cardname">贷记卡\n</view>
+        <text>贷记卡是指发卡银行给予持卡人一定的信用额度，持卡人可在信用额度内先消费、后还款的银行卡。借记卡和贷记卡的区别在于，贷记卡卡背面签名条上印有3位阿拉伯数字的CVV码。\n</text>
+        <view class="kepu-unionpaycard-text-head">2、按照等级区分\n</view>
+        <text>按照等级来区分，可分为普卡、金卡、白金卡和钻石卡：\n</text>
+        <view class="kepu-unionpaycard-text-cardname">普卡\n</view>
+        <text>所有银联卡持卡人均可享受安全便捷的用卡服务，银联卡不仅在国内通用好用，还可在境外超过140个国家使用。不论您要购物、出行还是享受美食，银联卡都是您最好的助手。\n</text>
+        <view class="kepu-unionpaycard-text-cardname">金卡\n</view>
+        <text>在普卡权益基础上，金卡持卡人除可尊享更高的信用额度外，还可享受银联与发卡银行提供的丰富多彩的特色服务，如道路救援、保险服务等，从而让您的生活更加便利舒适。\n</text>
+        <view class="kepu-unionpaycard-text-cardname">白金卡\n</view>
+        <text>银联联合发卡银行，为白金卡持卡人提供白金秘书、白金商圈、绿色食品在线订购等多种服务，通过体贴、周到的服务，让白金卡持卡人享受更高品质的生活，详情请点击此处。\n</text>
+        <view class="kepu-unionpaycard-text-cardname" >钻石卡\n</view>
+        <text>银联联合发卡银行，为钻石卡持卡人提供更加个性化的服务，如高档酒店高级会员礼遇、高端俱乐部服务、银联白金贵宾厅服务等，通过优质的专属服务，彰显持卡人的尊贵身份，详情请点击此处。\n</text>
+      </view>
+    </view>
+  </view>
+</view>

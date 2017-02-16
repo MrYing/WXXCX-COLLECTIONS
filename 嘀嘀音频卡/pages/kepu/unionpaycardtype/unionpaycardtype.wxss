@@ -1,0 +1,33 @@
+.kepu-unionpaycard-title {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: limegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  padding-left: 10rpx;
+  padding-right: 5rpx;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+  font-size: 15px;
+  background: darkgrey;
+}
+
+.kepu-unionpaycard-text-head {
+   border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: cornflowerblue;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.kepu-unionpaycard-text-cardname {
+  text-align: center;
+}
+
+.kepu-unionpaycard-text {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
