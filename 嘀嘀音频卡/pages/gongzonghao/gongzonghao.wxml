@@ -1,0 +1,6 @@
+<view class="container container-fill">
+    <view class="container-body">
+     <image src="../../images/gongzonghao.jpg" mode="widthFix"></image>
+     <image src="../../images/qrcode.jpg" mode="aspectFill" class="qrcode"></image>
+    </view>
+</view>
