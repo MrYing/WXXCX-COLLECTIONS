@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="container-body">
+    <view class="news-detail-area">
+      <view class="news-detail-list">
+        <scroll-view scroll-y="true" scroll-x="false" class="news-detail-item-list">
+          <view class="news-detail">
+          </view>
+          <view class="news-detail-item-title">{{currentnew.title}}</view>
+          <view></view>
+          <view class="news-detail-item-time">
+            <text class="news-detail-item-time-text">时间:{{currentnew.time}}</text>
+          </view>
+          <view class="news-detail-content" wx:for="{{currentnew.content}}">
+            <image src="{{item.img}}" mode="widthFix" class="news-detail-img"></image>
+            <view class="news-detail-content-profile">
+              <text>{{item.imgprofile}}</text>
+            </view>
+            <view></view>
+            <view class="news-detail-content-text">
+              <text>{{item.text}}</text>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>
