@@ -1,0 +1,17 @@
+<view class="container">
+ <view class="container-body">
+    <view class="product-introduce">
+       <view class="product-introduce-item-list">
+           <scroll-view scroll-y="true" scroll-x="false" class="product-introduce-item" wx:for="{{introducelist}}">
+            <text class="product-introduce-item-title">{{item.title}}</text>
+            <view></view>
+            <!--<view class="product-introduce-item-text">
+              <text >{{item.text}}</text>
+            </view>-->
+            <image src="{{item.imgurl}}" mode="widthFix"></image>
+           </scroll-view >
+       </view>
+    </view>
+ </view>
+
+</view>

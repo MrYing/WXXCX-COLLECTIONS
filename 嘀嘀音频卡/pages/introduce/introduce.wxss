@@ -1,0 +1,32 @@
+/* pages/introduce/introduce.wxss */
+.product-introduce-item-list {
+    margin-top: 10rpx;
+}
+
+.product-introduce-item-title {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: limegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  padding-left: 10rpx;
+  padding-right: 5rpx;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+  font-size: 15px;
+  background: darkgrey;
+}
+
+.product-introduce-item-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product-introduce-item image{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
