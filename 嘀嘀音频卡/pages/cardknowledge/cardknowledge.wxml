@@ -1,0 +1,12 @@
+<view class="container">
+	<view class="card-list">
+		<navigator class="card-list-item" url="../kepu/bankcardtype/bankcardtype">
+			<image src="../../images/wenhao.png" mode="aspectFit"></image>
+			<text>银行卡的种类及区别</text>
+		</navigator>
+		<navigator class="card-list-item" url="../kepu/unionpaycardtype/unionpaycardtype">
+			<image src="../../images/wenhao.png" mode="aspectFit"></image>
+			<text>银联卡的种类及区别介绍</text>
+		</navigator>
+	</view>
+</view>
