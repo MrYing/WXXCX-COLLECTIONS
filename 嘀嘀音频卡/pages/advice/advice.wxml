@@ -1,0 +1,13 @@
+<view class="container container-gray">
+<form bindsubmit="submitAdvice" bindreset="formReset">
+  <view class="btn-submit">
+    <view class="group">
+      <view class="group-header">意见描述</view>
+      <view class="group-body">
+        <textarea maxlength="300" auto-focus="true" placeholder="请输入您的意见，我们很高兴聆听您的想法" name="myadvice"></textarea>
+      </view>
+    </view>
+    <button formType="submit" class="submit-button" hover-stay-time="1000">提交</button>
+  </view>
+  </form>
+</view>
