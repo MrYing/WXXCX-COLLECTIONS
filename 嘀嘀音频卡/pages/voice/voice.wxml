@@ -1,0 +1,17 @@
+<!--pages/voice/voice.wxml-->
+<view class="container">
+<view class="card-voice-title">滴滴音频卡</view>
+<view class="card-voice-view">
+<text class="card-voice-text">抢先体验会发声音的音频卡。轻轻点击银行卡，就会发出声音。</text>
+</view>
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls ></audio>
+
+ <view class="card-voice-title">体验音频卡</view>
+ <text class="card-voice-text">长按音频卡，会发出实际包含一系列信息的音频信息。</text>
+ <view type="primary" bindtouchstart="mytouchstart" bindlongtap="mylongtap"
+ bindtouchend="mytouchend">
+ <image src="../../images/product_introduce/card.jpg" mode="widthFix"></image>
+ </view>
+</view>
+
+

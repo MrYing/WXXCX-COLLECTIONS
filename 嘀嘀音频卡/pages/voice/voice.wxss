@@ -1,0 +1,25 @@
+.card-voice-title{
+ border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: limegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  padding-left: 10rpx;
+  padding-right: 5rpx;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+  font-size: 15px;
+  background: darkgrey;
+}
+
+.card-voice-view{
+    padding: 0 10 10 10; 
+    margin-bottom: 20rpx;
+}
+
+.card-voice-text{
+    padding-left: 10px; 
+    margin-bottom: 20rpx;
+}
