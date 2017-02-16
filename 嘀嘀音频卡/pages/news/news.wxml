@@ -1,0 +1,22 @@
+<view class="container">
+ <view class="container-body">
+    <view class="news">
+       <view class="news-list">
+           <scroll-view scroll-y="true" scroll-x="false" class="news-list-item" wx:for="{{newslist}}">
+           <navigator url="../newdetail/newdetail?id={{item.id}}">
+                 <view class="news-list-item-title">{{item.title}}</view>
+                 <view></view>
+                 <view class="news-list-item-time">
+                    <text class="news-list-item-time-text">{{item.time}}</text>
+                 </view>
+                 <view class="news-list-item-profile">
+                  <text >{{item.profile}}</text>
+                  </view>
+                 <image src="{{item.imgurl}}" mode="widthFix" class="news-img"></image>
+             </navigator>
+           </scroll-view >
+       </view>
+    </view>
+ </view>
+
+</view>
