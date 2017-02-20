@@ -13,7 +13,7 @@
 	
 	<!-- 未定义拦截信息 -->
 	<appender name="other-log" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="file" value="/home/install_soft/gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/other-log.log" />
+		<param name="file" value="gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/other-log.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="UTF-8" />
 		<layout class="org.apache.log4j.PatternLayout">
@@ -23,7 +23,7 @@
 
 	<!-- 所有定义debug,info,warn,error信息日志 -->
 	<appender name="all-log" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="file" value="/home/install_soft/gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/all.log" />
+		<param name="file" value="gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/all.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="UTF-8" />
 		<layout class="org.apache.log4j.PatternLayout">
@@ -33,7 +33,7 @@
 
 	<!-- 定义debug信息日志 -->
 	<appender name="debug-log" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="file" value="/home/install_soft/gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/debug.log" />
+		<param name="file" value="gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/debug.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="UTF-8" />
 		<layout class="org.apache.log4j.PatternLayout">
@@ -46,7 +46,7 @@
 	</appender>
 	<!-- 定义info信息日志 -->
 	<appender name="info-log" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="file" value="/home/install_soft/gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/info.log" />
+		<param name="file" value="gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/info.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="UTF-8" />
 		<layout class="org.apache.log4j.PatternLayout">
@@ -59,7 +59,7 @@
 	</appender>
 	<!-- 定义warn信息日志 -->
 	<appender name="warn-log" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="file" value="/home/install_soft/gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/warn.log" />
+		<param name="file" value="gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/warn.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="UTF-8" />
 		<layout class="org.apache.log4j.PatternLayout">
@@ -72,7 +72,7 @@
 	</appender>
 	<!-- 定义error信息日志 -->
 	<appender name="error-log" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="file" value="/home/install_soft/gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/error.log" />
+		<param name="file" value="gzhzf_tomcat-7.0.70/webapps/xcxdemo/log/error.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="UTF-8" />
 		<layout class="org.apache.log4j.PatternLayout">
