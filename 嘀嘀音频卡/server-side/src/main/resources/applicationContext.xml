@@ -25,7 +25,6 @@
 			<value>${driverClass}</value>
 		</property>
 		<property name="jdbcUrl">
-			<!-- 北京服务器 -->
 			<value>${jdbcUrl}</value>
 		</property>
 		<property name="user">
