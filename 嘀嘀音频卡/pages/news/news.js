@@ -1,24 +1,13 @@
 // pages/news/news.js
 Page({
   data: {
-    newslist: [
-      {
-        "id": "1",
-        "title": "第四届“金交会”：建行推出银联音频卡",
-        "time": "2015-06-26 17:37:26",
-        "profile": "国际在线广东频道消息：2015年6月26日，第四届中国（广州）国际金融交易博览会在广州市海珠区琶洲会展中心盛大启动。在中国建设银行的展区，笔者看到各式各样针对移动端的移动支付产品及网银安全工具。有一款建行音频卡，可以让银行卡“发声”，为自己“代言”，受到普遍关注，吸引了不少参展人员前来咨询和围观。",
-        "imgurl": "/images/news/new1_2.jpg"
-      }, {
-        "id": "2",
-        "title": "奇龙网与银联即将联合发行的会发声银行卡",
-        "time": "2016-08-22 11:35",
-        "profile": "奇龙网与深圳前海卓智长天科技有限公司（以下简称：卓智长天）达成战略合作，将与银行共同推出一张会发“声”的银行卡——银联音频卡（以下简称：音频卡），以满足用户在互联网新时代的不同支付需求，为用户提供更为快捷、方便、安全的线上线下支付体验。",
-        "imgurl": "/images/swiper_1.jpg"
-      }
-    ]
+    newslist: [],
+    scrolltop: null, //滚动位置
+    page: 0 //分页
   },
   onLoad: function (options) {
-    // 页面初始化 options为页面跳转所带来的参数
+    //后台查询新闻列表数据、分页
+    this.fetchNewsData();
   },
   onReady: function () {
     // 页面渲染完成
@@ -31,5 +20,90 @@ Page({
   },
   onUnload: function () {
     // 页面关闭
-  }
+  },
+  fetchNewsData: function () { //获取新闻列表
+    var that = this
+    const perpage = 5;
+    this.setData({
+      page: this.data.page + 1
+    })
+    const page = this.data.page;
+    var nnews = [];
+    // for (var i = (page - 1) * perpage; i < page * perpage; i++) {
+    //每次查询一条新闻信息数据
+    //wx.request
+    // }
+    //或者每次直接查询10条新闻
+    wx.showNavigationBarLoading()
+    wx.request({
+      url: 'https://wx.excecard.com/xcxdemo/xcx/news/newslist.do',
+      data: {
+        "page": page,
+        "perpage": perpage
+      },
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: function (res) {
+        // success
+        nnews = res.data
+        // console.log('nnews:' + JSON.stringify(nnews))
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        wx.hideNavigationBarLoading()
+        // complete
+        if (nnews.length > 0) {
+          that.setData({
+            newslist: that.data.newslist.concat(nnews)
+          })
+          console.log('this.data.newslist>> ' + that.data.newslist)
+        }
+
+      }
+    })
+
+
+  },
+  scrollLoading: function () {   //滚动加载
+    this.fetchNewsData();
+  },
+  scrollHandle: function (e) {  //滚动事件
+    this.setData({
+      scrolltop: e.detail.scrollTop
+    })
+  },
+  goToTop: function () { //回到顶部
+    this.setData({
+      scrolltop: 0
+    })
+  },
+  // onPullDownRefresh: function () {  //下拉刷新
+  //   console.log('onPullDownRefresh invoke..')
+  //   //清空重置已加载的数据
+  //   this.setData({
+  //     page: 0,
+  //     newslist: []
+  //   })
+  //   this.fetchNewsData();
+  //   //设置请求时间
+  //   setTimeout(() => {
+  //     wx.stopPullDownRefresh();
+  //   }, 1000)
+
+  // },
+  // onPullDownRefresh: function () {
+  //   // Do something when pull down.
+  //   console.log('刷新');
+  // },
+
+  onReachBottom: function (e) {
+    // this.setData({
+    //   page: 0,
+    //   newslist: []
+    // })
+    this.fetchNewsData();
+  },
+
 })
