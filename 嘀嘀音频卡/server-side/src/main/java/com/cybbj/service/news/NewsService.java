@@ -27,6 +27,15 @@ public class NewsService {
 	public List<News> getNewsListByPage(String page, String perPage) {
 		return newsDao.getNewsListByPage(page,perPage);
 	}
+
+	/**
+	 * getNewsById : 根据id查询新闻表的新闻简介信息。
+	 * @param nid
+	 * @return
+	 */
+	public News getNewsById(String nid) {
+		return newsDao.getNewsById(nid);
+	}
 	
 	
 }
